@@ -17,6 +17,7 @@ router.get(path + 'wUnAuth', function (req, res) {
  * ROUTE AUTENTICATE
  */
 router.use(path + 'sensors', validateUser, require('./domain/sensors'));
+router.use(path + 'weather', validateUser, require('./domain/weather'));
 router.use(path + 'utils', validateUser, require('./domain/utils'));
 
 /**
