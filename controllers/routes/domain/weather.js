@@ -27,12 +27,13 @@ router.get('/city/:city', function (req, res) {
 });
 
 router.get('/coord', function (req, res) {
-    request('https://api.weatherbit.io/v2.0/forecast/daily?lat=' + req.params.lat + ' &lon=' + req.params.lon + '&country=IT&key=ec9e5bb14178494dad84e386561bbff7&lang=it', { json: true }, (err, resR, body) => {
+    console.log('https://api.weatherbit.io/v2.0/forecast/daily?lat=' + req.query.lat + ' &lon=' + req.query.lon + '&country=IT&key=ec9e5bb14178494dad84e386561bbff7&lang=it');
+    request('https://api.weatherbit.io/v2.0/forecast/daily?lat=' + req.query.lat + ' &lon=' + req.query.lon + '&country=IT&key=ec9e5bb14178494dad84e386561bbff7&lang=it', { json: true }, (err, resR, body) => {
         if (err) {
-            logger.error("Error While Required Weather with lat lon ", req.params.lat, req.params.lon, err);
+            logger.error("Error While Required Weather with lat lon ", req.query.lat, req.query.lon, err);
             res.status(500).send(err);
         }
-            logger.info("Required Weather with lat lon", req.params.lat, req.params.lon, body);
+            logger.info("Required Weather with lat lon", req.query.lat, req.query.lon, body);
             res.send(body);
         });
 });

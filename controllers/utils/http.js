@@ -10,7 +10,7 @@ var ddos = new Ddos({ burst: 10, limit: 15 })
 
 function init(configFile) {
     configFileObj = configFile;
-    app.use(ddos.express);
+    //app.use(ddos.express);
 
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
