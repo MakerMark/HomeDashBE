@@ -27,7 +27,7 @@ router.get('/:id', function (req, res) {
                 sensorList[sensor][i].rilevazioni = [];
                 if(sensor == "socket"){
                     for(var x = 0; x < Math.floor(Math.random() * 50) + 1; x++){
-                        var ts = Math.round((new Date()).getTime() / 1000);
+                        var ts = Math.round((new Date()).getTime() / 1000) + x;
                         sensorList[sensor][i].rilevazioni.push({
                             measuredW: Math.floor(Math.random() * 100) + 0,
                             timestamp: ts,
@@ -42,7 +42,7 @@ router.get('/:id', function (req, res) {
                     }
                 }else if(sensor == "temperature"){
                     for(var x = 0; x < Math.floor(Math.random() * 50) + 1; x++){
-                        var ts = Math.round((new Date()).getTime() / 1000);
+                        var ts = Math.round((new Date()).getTime() / 1000)  + x;
                         sensorList[sensor][i].rilevazioni.push({
                             measured: Math.floor(Math.random() * 30) + 0,
                             timestamp: ts,
