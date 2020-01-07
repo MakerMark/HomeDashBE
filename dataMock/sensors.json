@@ -1,1 +1,73 @@
-/*TODO MOCK MODEL*/
+{
+    "socket": [
+        {
+            "id": "s0",
+            "descrizione": "Presa Tv",
+            "status": false,
+            "currentW": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "s1",
+            "descrizione": "Presa Luce Divano",
+            "status": false,
+            "currentW": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "s2",
+            "descrizione": "Presa Luce Ingresso",
+            "status": false,
+            "currentW": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "s3",
+            "descrizione": "Macchina Caffe",
+            "status": false,
+            "currentW": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "s4",
+            "descrizione": "Presa Pc",
+            "status": true,
+            "currentW": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        }
+    ],
+    "temperature":[
+        {
+            "id": "t0",
+            "descrizione": "Cucina",
+            "current": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "t1",
+            "descrizione": "Sala",
+            "current": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "t2",
+            "descrizione": "Ingresso",
+            "current": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "t3",
+            "descrizione": "Esterno",
+            "current": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        },{
+            "id": "t4",
+            "descrizione": "Camera",
+            "current": 0,
+            "lastUpdate": 0,
+            "rilevazioni": []
+        }
+    ]
+}
